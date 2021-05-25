@@ -1,0 +1,10 @@
+{
+  "extends": "standard-with-typescript",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "@typescript-eslint/consistent-type-definitions": "off", // Use both Type and Interface definitions
+    "@typescript-eslint/strict-boolean-expressions": "off" // Make possible to do non boolean comparisons
+  }
+}
