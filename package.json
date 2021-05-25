@@ -32,6 +32,9 @@
     "typescript": "^4.2.4"
   },
   "lint-staged": {
-    "*.{ts,tsx}": "eslint 'src/**' --fix && npm run test:staged"
+    "*.{ts,tsx}": [
+      "eslint 'src/**' --fix",
+      "npm run test:staged"
+    ]
   }
 }
