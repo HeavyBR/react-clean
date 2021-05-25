@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --passWithNoTests",
     "test:watch": "npm test -- --watch",
-    "test:staged": "npm test -- --findRelatedTests",
+    "test:staged": "npm test -- --findRelatedTests ./src/**",
     "test:ci": "npm test -- --coverage",
     "prepare": "husky install"
   },
@@ -30,12 +30,6 @@
     "lint-staged": "^11.0.0",
     "ts-jest": "^26.5.6",
     "typescript": "^4.2.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npx lint-staged",
-      "pre-push": "npm run test:staged"
-    }
   },
   "lint-staged": {
     "*.{ts,tsx}": "eslint 'src/**' --fix && npm run test:staged"
