@@ -9,6 +9,6 @@ module.exports = {
     '.+\\.ts$': 'ts-jest' // Transform ts to js
   },
   moduleNameMapper: {
-    '@/(.*)': '<rootDir>/src/$1'
+    '@/(.*)': '<rootDir>/src/$1' // Map SRC to @. Example: @/data, @/domain
   }
 }
