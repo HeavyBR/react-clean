@@ -4,9 +4,9 @@ module.exports = {
     '<rootDir>/src/**/*.{ts,tsx}'
   ],
   coverageDirectory: 'coverage',
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   transform: {
-    '.+\\.ts$': 'ts-jest' // Transform ts to js
+    '.+\\.(ts|tsx)$': 'ts-jest' // Transform ts to js
   },
   moduleNameMapper: {
     '@/(.*)': '<rootDir>/src/$1' // Map SRC to @. Example: @/data, @/domain

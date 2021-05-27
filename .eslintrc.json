@@ -1,10 +1,23 @@
 {
-  "extends": "standard-with-typescript",
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "standard-with-typescript",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "rules": {
     "@typescript-eslint/consistent-type-definitions": "off", // Use both Type and Interface definitions
-    "@typescript-eslint/strict-boolean-expressions": "off" // Make possible to do non boolean comparisons
+    "@typescript-eslint/strict-boolean-expressions": "off", // Make possible to do non boolean comparisons
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
   }
 }
