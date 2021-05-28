@@ -27,7 +27,7 @@ module.exports = {
         getCustomTransformers: () => ({ before: [styledComponentsTransformer] })
       }
     }, {
-      test: /\.(s?)css$/,
+      test: /\.scss$/,
       use: [{
         loader: 'style-loader'
       },
